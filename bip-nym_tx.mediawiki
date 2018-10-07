@@ -216,7 +216,7 @@ It is possible to construct a script within P2SH or P2WSH, however we find these
 
 === Why does a nym need a signature at all? ===
 
-If a nym not would include a signature, various attacks would be possible. The nym signature includes the key itself and signs over the vital fields, which are the nym’s version, usage byte and revocation puzzle.
+If a nym would not include a signature, various attacks would be possible. The nym signature includes the key itself and signs over the vital fields, which are the nym’s version, usage byte and revocation puzzle.
 
 For example, Malory could see Alice trying to enrol a key with a large burn amount. Without having a signature, Malory could copy Alice’s public key, and enrol another nym with Alice’s public key but Malory’s revocation key. If Malory puts a large fee on this imposting enrolment or cooperates with a miner, he could get the imposting enrolment included in a block before Alice gets hers enrolled, opening for ambiguity, frustration or worse.
 
